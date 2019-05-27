@@ -29,3 +29,8 @@ class FormContainer extends Component {
     }
 }
 export default FormContainer;
+
+document.querySelectorAll('.form-component')
+  .forEach(domContainer => {
+    ReactDOM.render(<FormContainer />, domContainer)
+  });
