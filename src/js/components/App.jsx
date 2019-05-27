@@ -4,17 +4,13 @@ import Input from "./Input.jsx";
 import "../../styles/general.scss";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      inputValue: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
-  handleChange(event) {
+  state = {
+    inputValue: ""
+  };
+  handleChange = (event) => {
     this.setState({ inputValue: event.target.value });
   }
-  render() {
+  render = () => {
     const { inputValue } = this.state;
     return (
       <div id="app">
