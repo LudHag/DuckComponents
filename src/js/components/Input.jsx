@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/components/input.scss";
+
 const Input = ({ label, text, type, id, value, handleChange }) => (
-  <div className="form-group">
+  <div className="input-component">
     <label htmlFor={label}>{text}</label>
     <input
       type={type}
@@ -22,4 +24,6 @@ Input.propTypes = {
   value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired
 };
+Input.styled 
+
 export default Input;
